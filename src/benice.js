@@ -131,25 +131,6 @@ class BinanceManager extends EventEmitter {
     }
 }
 
-const binanceSocket = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@trade');
 
-binanceSocket.on('open', () => {
-  console.log('Connected to Binance WebSocket');
-});
-
-binanceSocket.on('message', (data) => {
-  const trade = JSON.parse(data);
-  console.log(`Price: ${trade.p}`);
-});
-
-binanceSocket.on('error', (err) => {
-  console.error('Binance WebSocket error:', err);
-});
-
-binanceSocket.on('close', () => {
-  console.log('Binance WebSocket closed');
-});
-
-module.exports = { BinanceManager }; 
 
 module.exports = { BinanceManager }; 
