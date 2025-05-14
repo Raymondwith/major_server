@@ -5,10 +5,10 @@ class PriceManager {
         this.prices = new Map();
         this.adjustments = new Map();
         this.dbConfig = {
-            host: 'localhost',
-            user: 'root',
-            password: '',
-            database: 'trading_db'
+            host: 'sql204.infinityfree.com',
+            user: 'if0_38925792',
+            password: '5n0fqx9MSdB',
+            database: 'if0_38925792_trading_db'
         };
     }
 
